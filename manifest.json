@@ -1,0 +1,19 @@
+{
+    "name": "Adblocker",
+    "version": "1.0",
+    "description": "A chrome extension that blocks both ads and trackers",
+    "permissions": ["declarativeNetRequest"],
+    "declarative_net_request": {
+        "rule_resources" :[
+            {
+                "id":"ruleset_1",
+                "enabled":true,
+                "path":"rules.json"
+            }
+        ]
+    },
+    "icons": {
+        "128": "icons/icon.png"
+    },
+    "manifest_version": 3
+}
